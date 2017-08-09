@@ -15,6 +15,12 @@ ifeq ($(uname_S),FreeBSD)
         REBARPROFILE = fbsd
         export REBARPROFILE
 endif
+ifeq ($(uname_S),Linux)
+        PLATFORM = Linux
+        WMAKE = make
+        REBARPROFILE = deb
+        export REBARPROFILE
+endif
 ifeq ($(uname_V6),joyent)
         PLATFORM = smartos
         WMAKE = make
