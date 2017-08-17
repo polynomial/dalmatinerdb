@@ -9,5 +9,5 @@ in stdenv.mkDerivation {
   inherit version;
   name = "dalmatinerdb-${version}";
 
-  buildInputs = with pkgs; [ erlang stdenv.cc ];
+  buildInputs = with pkgs; [ erlang stdenv.cc zlib ];
 }
