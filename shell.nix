@@ -32,6 +32,7 @@ in stdenv.mkDerivation {
         # build
         git
         erlangR18
+        zlib
     ];
     shellHook = ''
         export NIX_PATH="nixpkgs=${nixpkgsPath}"
